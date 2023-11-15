@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
     projectId: "speakoutspace-38617",
@@ -94,11 +94,5 @@ function appendItemToCommentSectionEl(comments) {
     listItem.appendChild(fromParagraph);
 
     commentSectionEl.appendChild(listItem); 
-
-    listItem.addEventListener("click", function() {
-        let exactLocationOfItemInDB = ref(database, `commentsList/${commentsID}`);
-        
-        remove(exactLocationOfItemInDB)
-    });
 
 }
