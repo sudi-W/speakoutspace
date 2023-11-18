@@ -53,7 +53,7 @@ onValue(commentsListInDB, function(snapshot) {
     
         }
     } else {
-        commentSectionEl.innerHTML = "<span style='color: red;'>There aren't any items here just yet.</span>";
+        commentSectionEl.innerHTML = "<span style='color: red;'>There aren't any comments here just yet.</span>";
     }
     
 })
