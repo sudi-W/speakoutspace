@@ -64,6 +64,10 @@ input {
     color: #8F8F8F;
     background-color: #444059;
     width: 80%; 
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 button {
@@ -72,19 +76,16 @@ button {
     width: 100%; 
     margin-top: 10px;
     font-weight: 600;
-}
-
-button:hover {
-    background-color: #1F7DB4; 
-    cursor: pointer;
-}
-
-input, button {
     font-family: 'Inter';
     border: 0;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+}
+
+button:hover {
+    background-color: #1F7DB4; 
+    cursor: pointer;
 }
 
 .input-group-one,
