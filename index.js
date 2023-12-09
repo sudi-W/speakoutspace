@@ -80,13 +80,13 @@ function appendItemToCommentSectionEl(comments) {
 
     // Create separate paragraphs for "To", "Comment", and "From"
     let toParagraph = document.createElement("p");
-    toParagraph.textContent = `To ${commentsValue.to}`;
+    toParagraph.textContent = `To: ${commentsValue.to}`;
 
     let commentParagraph = document.createElement("p");
     commentParagraph.textContent = commentsValue.comment;
 
     let fromParagraph = document.createElement("p");
-    fromParagraph.textContent = `From ${commentsValue.from}`;
+    fromParagraph.textContent = `From: ${commentsValue.from}`;
 
     // Append paragraphs to the list item
     listItem.appendChild(toParagraph);
